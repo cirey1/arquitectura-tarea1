@@ -1,0 +1,15 @@
+<a href="/">
+  <button type="button" name="button">BACK</button>
+</a>
+
+
+<h1>Comentarios</h1>
+
+<ul>
+  {% for sub_lista in lista %}
+  <li><p>COMENTARIO: {{ sub_lista.text }}</p>
+  <p>FECHA: {{sub_lista.comment_date}}</p>
+  <p>IP CLIENTE: {{sub_lista.client_ip}}</p></li>
+  {% endfor %}
+
+</ul>
